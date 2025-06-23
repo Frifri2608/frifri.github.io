@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/asset/img/Web-icon.png">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/asset/style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon portfolio !</h1>
-        <nav>
-            <ul>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Mes Projets & Réalisations</h1>
+        <p>Voici quelques exemples de projets que j'ai pu réaliser.</p>
     </header>
-    <section id="projets">
-        <h2>Mes Projets</h2>
-        <!-- Liste de projets -->
-    </section>
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <!-- Formulaire de contact ou autres informations -->
-    </section>
-    <footer>
-        <p>© 2025 Mon Nom</p>
-    </footer>
+    <main class="grid">
+
+        <!-- Projet Web-Space -->
+        <div class="card">
+            <img src="/asset/img/Web-Space.png" alt="Screen Web-Space">
+            <div class="card-content">
+                <div class="tags">
+                    <span>JavaScript</span>
+                    <span>HTML/CSS</span>
+                    <span>Game Dev</span>
+                </div>
+                <h3>Mini Shooter - "Web-Space"</h3>
+                <p>Un jeu d'arcade développé en HTML/CSS/JS.<br>
+                    Vous pilotez un vaisseau spatial, et votre objectif est d'éliminer les débris, satellites et
+                    autres dangers pour accumuler un maximum de points !</p>
+
+                <div class="button-group">
+                    <a href="https://github.com/Amgt2302/Web-Space" class="button">Voir le code</a>
+                    <a href="https://amgt2302.github.io/Web-Space/Hidden.html" class="button play-button">Jouer</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet Air-Platformer -->
+        <div class="card">
+            <img src="/asset/img/Air-Platformer.png" alt="Screen Air Platformer">
+            <div class="card-content">
+                <div class="tags">
+                    <span>JavaScript</span>
+                    <span>WebSocket</span>
+                    <span>Game Dev</span>
+                </div>
+                <h3>Mini Platformer - "Air-Platformer"</h3>
+                <p>Un jeu de plateforme 2D integrant du WebSockets.<br>
+                    Vous contrôlez un personnage depuis votre mobile, et votre objectif est d'atteindre la plateforme
+                    finale sans mourir !</p>
+                <div class="button-group">
+                    <a href="https://github.com/Amgt2302/Air-Platformer" class="button" target="_blank">Voir le
+                        projet</a>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+<footer>
+    <p>&copy; <span id="Auto-Year"></span> - Tous droits réservés</p>
+</footer>
+
+<script src="/asset/script.js"></script>
+
 </html>
